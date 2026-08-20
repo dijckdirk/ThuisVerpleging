@@ -1,0 +1,129 @@
+:root {
+  --green-100: #eef6e7;
+  --green-200: #dceccf;
+  --green-500: #6fb061;
+  --green-700: #2f6d39;
+  --text-900: #242824;
+  --text-700: #4c544d;
+  --panel: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  color: var(--text-900);
+  background:
+    radial-gradient(circle at top left, rgba(111, 176, 97, 0.25), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(111, 176, 97, 0.18), transparent 42%),
+    linear-gradient(180deg, #f7faf5 0%, #edf4e8 100%);
+  display: grid;
+  place-items: center;
+  padding: 24px 14px;
+}
+
+.card {
+  width: min(760px, 100%);
+  background: var(--panel);
+  border: 1px solid #c9d6cb;
+  border-radius: 16px;
+  box-shadow: 0 16px 44px rgba(23, 54, 29, 0.14);
+  overflow: hidden;
+}
+
+.top {
+  padding: 24px 24px 8px;
+  background:
+    linear-gradient(180deg, rgba(220, 236, 207, 0.74) 0%, rgba(255, 255, 255, 0.94) 100%);
+}
+
+.badge {
+  display: inline-block;
+  background: #f3f8ef;
+  border: 1px solid #c4d7c5;
+  color: var(--green-700);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 6px 11px;
+}
+
+h1 {
+  margin: 14px 0 0;
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
+  color: var(--green-700);
+}
+
+.main {
+  padding: 22px 24px 28px;
+}
+
+.lead {
+  margin: 0 0 16px;
+  font-size: 1.06rem;
+  line-height: 1.6;
+  color: var(--text-700);
+}
+
+.points {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.points li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.contact {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #d9e2d9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phone {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.45rem;
+  color: #1f2a22;
+}
+
+a {
+  color: var(--green-700);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--green-700);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.back:hover,
+.back:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 620px) {
+  .top,
+  .main {
+    padding: 18px;
+  }
+
+  .phone {
+    font-size: 1.25rem;
+  }
+}
