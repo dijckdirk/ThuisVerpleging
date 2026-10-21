@@ -410,6 +410,7 @@ h3 {
 .site-footer a {
   color: var(--green-700);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .site-footer a:hover,
