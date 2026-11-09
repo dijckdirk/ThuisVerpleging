@@ -99,6 +99,10 @@ body {
   padding: 0.84rem 1.35rem;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .text-link {
   text-decoration: none;
   color: var(--green-700);
