@@ -13,6 +13,7 @@
 }
 
 body {
+  -webkit-text-size-adjust: 100%;
   margin: 0;
   min-height: 100vh;
   font-family: "Nunito", "Segoe UI", sans-serif;
@@ -86,17 +87,38 @@ h1 {
   padding-top: 18px;
   border-top: 1px solid #d9e2d9;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 16px;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info p {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.region {
+  color: #1f2a22;
 }
 
 .phone {
-  margin: 0;
-  font-weight: 800;
-  font-size: 1.45rem;
-  color: #1f2a22;
+  font-weight: 400;
+}
+
+.phone a,
+.mail a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.phone a:hover,
+.mail a:hover {
+  text-decoration: underline;
+}
+
+.contact-info svg {
+  vertical-align: -3px;
+  margin-right: 0.4rem;
 }
 
 a {
@@ -123,7 +145,4 @@ a {
     padding: 18px;
   }
 
-  .phone {
-    font-size: 1.25rem;
-  }
 }
